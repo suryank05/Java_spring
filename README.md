@@ -1,36 +1,4 @@
 # 🎓 ExamWizards Backend
-
-<div align="center">
-
-![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=for-the-badge&logo=spring)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=for-the-badge&logo=mysql)
-![Maven](https://img.shields.io/badge/Maven-3.8+-red?style=for-the-badge&logo=apache-maven)
-
-**A comprehensive Spring Boot backend for the ExamWizards online examination and course management platform**
-
-[Features](#-features) • [Quick Start](#-quick-start) • [API Documentation](#-api-documentation) • [Architecture](#-architecture) • [Contributing](#-contributing)
-
-</div>
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Technology Stack](#-technology-stack)
-- [Quick Start](#-quick-start)
-- [Configuration](#-configuration)
-- [API Documentation](#-api-documentation)
-- [Architecture](#-architecture)
-- [Database Schema](#-database-schema)
-- [Security](#-security)
-- [Testing](#-testing)
-- [Deployment](#-deployment)
-- [Contributing](#-contributing)
-- [License](#-license)
-
 ## 🌟 Overview
 
 ExamWizards Backend is a robust Spring Boot application that powers a comprehensive online examination and course management system. It provides secure APIs for user management, course creation, exam administration, payment processing, and analytics.
@@ -380,31 +348,6 @@ mvn test jacoco:report
 - **Repository Tests**: Database interaction testing
 - **Security Tests**: Authentication and authorization testing
 
-## 🚀 Deployment
-
-### Development
-```bash
-mvn spring-boot:run
-```
-
-### Production Build
-```bash
-mvn clean package
-java -jar target/examport-1.0.0.jar
-```
-
-### Docker Deployment
-```dockerfile
-FROM openjdk:17-jdk-slim
-COPY target/examport-1.0.0.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app.jar"]
-```
-
-### Environment-Specific Configuration
-- **Development**: `application-dev.properties`
-- **Testing**: `application-test.properties`
-- **Production**: `application-prod.properties`
 
 ## 📊 Monitoring & Logging
 
@@ -419,40 +362,12 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 - File-based logging with rotation
 - Request/response logging
 
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. **Open a Pull Request**
 
 ### Development Guidelines
 - Follow Java coding conventions
 - Write comprehensive tests
 - Update documentation
-- Use meaningful commit messages
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Support
-
-- **Documentation**: [Wiki](https://github.com/yourusername/examwizards-backend/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/examwizards-backend/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/examwizards-backend/discussions)
+- Use meaningful commit messages.
 
 ## 🙏 Acknowledgments
 
@@ -460,13 +375,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Razorpay for payment gateway integration
 - MySQL team for the robust database system
 - All contributors who helped build this project
-
----
-
-<div align="center">
-
-**Built with ❤️ by the ExamWizards Team**
-
-[⭐ Star this repo](https://github.com/yourusername/examwizards-backend) • [🐛 Report Bug](https://github.com/yourusername/examwizards-backend/issues) • [✨ Request Feature](https://github.com/yourusername/examwizards-backend/issues)
-
-</div>
